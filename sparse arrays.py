@@ -8,9 +8,7 @@ import sys
 
 # Complete the matchingStrings function below.
 def matchingStrings(strings, queries):
-    result = []
-    for i in queries:
-        result.append(0)
+    result = [0 for _ in range(queries)]
     for aquery in range(len(queries)):
         for astring in range(len(strings)):
             if queries[aquery] == strings[astring]:
